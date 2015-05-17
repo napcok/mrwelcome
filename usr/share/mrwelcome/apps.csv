@@ -1,0 +1,55 @@
+0-IKONA|1-RPM|2-NAZWA|3-GRUPA|4-OPIS|5-START|6-REPO
+codecs-audio|task-codec-audio|Audio Multimedia Codecs|audio featured|Various Multimedia Codecs for Audio|false|tainted|
+codecs-video|task-codec-video|Video Multimedia Codecs|video featured|Various Multimedia Codecs for Video|false|tainted|
+flash-player-plugin|flash-player-plugin|Flash plugin|internet featured|Flash browser plugin|false|non-free|
+steam|steam|Steam|games|Steam Client|steam|non-free|
+megaglest|megaglest|Megaglest|games|3D Real Time Strategy|megaglest||
+sauerbraten|sauerbraten|Sauerbraten|games|Multi-player/single-player first person shooter game|sauerbraten|non-free|
+supertux|supertux|Supertux|games|Classic 2d jump 'n run sidescroller with tux |supertux2||
+supertuxkart|supertuxkart|SuperTuxKart|games|Kart racing game featuring Tux and friends|supertuxkart||
+warzone2100|warzone2100|Warzone 2100|games|Postnuclear realtime strategy|warzone2100||
+wesnoth|wesnoth|Battle for Wesnoth|games|Fantasy turn-based strategy game|wesnoth||
+0ad|0ad|O A.D|games|RTS Game of Ancient Warfare|0ad||
+blender|blender|Blender|graphics|3d modeller/renderer|blender.nonsse||
+mypaint|mypaint|MyPaint|graphics|Painting Program|mypaint||
+gimp|gimp|GIMP|graphics|The GNU image manipulation program|gimp||
+inkscape|inkscape|Inkscape|graphics|Vector graphics editor|inkscape||
+digikam|digikam|Digikam|graphics|Digital photo management application|digikam||
+darktable|darktable|Darktable|graphics|Virtual lighttable and darkroom for photographers|darktable||
+pidgin|pidgin|Pidgin|internet|Multi-protocol instant messaging client|pidgin||
+skype|get-skype|Skype|internet featured|Call, see, message and share with others|skype|non-free|
+filezilla|filezilla|Filezilla|internet|Full-featured graphical ftp/ftps/sftp client|filezilla||
+firefox|firefox|Firefox|internet featured|Next generation web browser|firefox||
+qbittorrent|qbittorrent|Qbittorrent|internet featured|Lightweight but feature rich bittorrent client|qbittorrent||
+chromium|chromium-browser|Chromium|internet|Fast Webbrowser|chromium-browser||
+amule|amule|Amule|internet|File sharing client compatible with eDonkey|amule||
+thunderbird|thunderbird|Thunderbird|internet|E-mail, news and RSS client|thunderbird||
+claws-mail|claws-mail|Claws Mail|internet|Fast e-mail client|claws-mail||
+smplayer|smplayer|Smplayer|video featured|Media Player|smplayer||
+kdenlive|kdenlive|Kdenlive|video|A non-linear video editing application|kdenlive||
+vlc|vlc|VLC|video featured|Multimedia player and streamer|vlc||
+kodi|kodi|Kodi|video|Media Center|kodi||
+qmmp|qmmp|Qmmp|audio|Audio Player similiar to Winamp|qmmp||
+clementine|clementine|Clementine|audio|Modern music player and library organizer|clementine||
+radiotray|radiotray|Radiotray|audio|Online radio streaming player|radiotray||
+soundkonverter|soundkonverter|Soundkonverter|audio|An audio file converter, CD ripper and replay gain tool|soundkonverter||
+eclipse|eclipse|Eclipse|programming|Extensible tool platform and java ide|eclipse||
+codeblocks|codeblocks|CodeBlocks|programming|A C++ IDE|codeblocks||
+qt-creator|qt-creator|Qt Creator|programming|Lightweight IDE for qt|qtcreator||
+anjuta|anjuta|Anjuta|programming|IDE for C and C++|anjuta||
+lazarus|lazarus|Lazarus|programming|IDE for free pascal|lazarus||
+k3b|k3b|K3b|system|Sophisticated cd/dvd burning application|k3b||
+gparted|gparted|GParted|system|Partition editor|gparted||
+k9copy|k9copy|K9copy|system|k9copy helps making backups of your video DVDs |k9copy||
+bleachbit|bleachbit|BleachBit|system|Clean junk to free disk space and to maintain privacy |bleachbit||
+system-config-printer|system-config-printer|System Config Printer|system|A printer administration tool|system-config-printer||
+virtualbox|virtualbox|VirtualBox|system|Virtualization software|VirtualBox||
+libreoffice-calc|libreoffice-calc|LibreOffice Calc|office|LibreOffice Spreadsheet Application|oocalc||
+libreoffice-writer|libreoffice-writer|LibreOffice Writer|office|LibreOffice Word Processor Application|oowriter||
+calligra|calligra|Calligra|office|Set of office applications for KDE|false||
+abiword|abiword|AbiWord|office|Lean and fast full-featured word processor|abiword||
+gnumeric|gnumeric|Gnumeric|offrce|A full-featured spreadsheet for GNOME|gnumeric||
+calibre|calibre|Calibre|office|E-book converter and library management|calibre||
+scribus|scribus|Scribus|office|Desktop Publishing Program|scribus||
+homebank|homebank|HomeBank|office|Free easy personal accounting for all|homebank||
+skrooge|skrooge|Skrooge|office|Personal Finance Management Tool|skrooge||

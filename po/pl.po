@@ -1,0 +1,347 @@
+# Copyright (C) YEAR Daniel Napora <napcok@gmail.com>
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Daniel Napora <napcok@gmail.com>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: mageiawelcome\n"
+"Report-Msgid-Bugs-To: http://bugs.mageia.org\n"
+"POT-Creation-Date: 2015-05-09 11:37+0200\n"
+"PO-Revision-Date: 2014-01-20 19:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:68
+msgid "Welcome to Mageia!"
+msgstr "Witaj w Mageia!"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:69
+msgid "Show this window at startup"
+msgstr "Pokaż to okno przy starcie"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:70
+msgid "Close"
+msgstr "Zamknij"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:73
+msgid "kernel:"
+msgstr "kernel:"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:75
+msgid "arch:"
+msgstr "arch:"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:77
+msgid "Desktop:"
+msgstr "Pulpit:"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:79
+msgid "Welcome"
+msgstr "Witaj"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:80
+msgid "Welcome<!--user//-->"
+msgstr "Witaj"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:82
+msgid ""
+"<p>Thank you for choosing Mageia!</p><p>We have put in a lot of effort to "
+"provide you with the best possible system. We hope you will have a good "
+"experience with Mageia. If you feel that our project is a good idea, we "
+"would also appreciate any contribution you can make to it for next versions."
+"</p><p>To find out how you can help <a class='weblink' href='http://www."
+"mageia.org/en/contribute/'>click here</a>.</p><p>Don't forget to tell your "
+"friends about Mageia.</p>"
+msgstr ""
+"<p>Dziękujemy za wybranie Mageia!</p><p>Wiele pracy włożyliśmy w to aby "
+"dostarczyć Ci możliwie najlepszy system. Mamy nadzieję, że używanie Magei "
+"dostarczy Ci wiele radości. Jeśli uważasz, że nasz projekt to dobry pomysł, "
+"będziemy wdzięczni za jakiekolwiek wsparcie, którego chciał(a)byś nam "
+"udzielić na drodze do kolejnego wydania.</p><p>Aby sprawdzić jak możesz "
+"pomóc <a class='weblink' href='http://www.mageia.org/pl/contribute/'>kliknij "
+"tutaj</a>.</p><p>Nie zapomnij wspomnieć swoim znajomym o Magei.</p>"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:83
+msgid "Mageia Control Center"
+msgstr "Centrum Sterowania Mageia"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:84
+msgid "Configure media sources and update system"
+msgstr "Konfiguracja nośnikow i aktualizacja systemu"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:85
+msgid "Install and remove software"
+msgstr "Instalacja i usuwanie oprogramowania"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:86
+msgid "Documentation"
+msgstr "Dokumentacja"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:87
+msgid "New Features"
+msgstr "Nowe funkcje"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:88
+msgid "Release Notes"
+msgstr "Informacje o wydaniu"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:89
+msgid "Errata"
+msgstr "Errata"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:90
+msgid "Newcomers Howto"
+msgstr "Dla początkujących"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:91
+msgid "Support"
+msgstr "Wsparcie"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:92
+msgid "Forums"
+msgstr "Forum"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:93
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:94
+msgid "Chat Room"
+msgstr "Pokój rozmów"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:95
+msgid "Bugzilla"
+msgstr "Bugzilla"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:96
+msgid "Community"
+msgstr "Społeczność"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:97
+msgid "Community Center"
+msgstr "Centrum społeczności"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:98
+msgid "Contribute"
+msgstr "Wesprzyj"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:99
+msgid "Donations"
+msgstr "Dotacje"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:100
+msgid "Join us!"
+msgstr "Dołącz do nas"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:101
+msgid ""
+"Mageia Control Center (aka drakconf) is a set of tools to help you configure "
+"your system"
+msgstr ""
+"Centrum Sterowania Mageia to zestaw narzędzi, które pomagają skonfigurować "
+"Twój system"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:102
+msgid "Software Management"
+msgstr "Zarządzanie oprogramowaniem"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:103
+msgid "Online administration"
+msgstr "Narzędzia administracyjne"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:104
+msgid "Hardware"
+msgstr "Sprzęt"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:105
+msgid "Network & Internet"
+msgstr "Sieć i Internet"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:106
+#: ../usr/share/mageiawelcome/mageiawelcome.py:136
+msgid "System"
+msgstr "System"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:107
+msgid "Network Sharing"
+msgstr "Udostępnianie plików"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:108
+msgid "Local Disks"
+msgstr "Dyski lokalne"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:109
+msgid "Security"
+msgstr "Bezpieczeństwo"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:110
+msgid "Boot"
+msgstr "Uruchamianie"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:111
+msgid "Administrator password is needed"
+msgstr "potrzebne hasło administratora"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:112
+msgid "User password is needed"
+msgstr "potrzebne hasło użytkownika"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:113
+msgid "Configure media sources ..."
+msgstr "Konfiguracja nośników ..."
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:114
+msgid "Mageia official repositories contain:"
+msgstr "Oficjalne repozytoria Magei zawierają:"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:115
+msgid ""
+"<span class='label green'>core</span> - the free-open-source packages, i.e. "
+"software licensed under a free-open-source license"
+msgstr ""
+"<span class='label green'>core</span> - wolne oprogramowanie, tzn. programy "
+"dostępne na wolnych, otwarto-źródłowych licencjach"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:116
+msgid ""
+"<span class='label red'>non-free</span> - some programs which are not free, "
+"or closed source. For example this repository includes Nvidia and ATI "
+"graphics card proprietary drivers, firmware for various WiFi cards, etc"
+msgstr ""
+"<span class='label red'>non-free</span> - programy na nie-wolnych "
+"licencjach, np. zamknięte sterowniki do kart graficznych Nvidia lub ATI, "
+"firmware dla niektórych kart WiFI, itp."
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:117
+msgid ""
+"<span class='label red'>tainted</span> - includes packages released under a "
+"free license. However, they may infringe on patents and copyright laws in "
+"some countries, e.g. multimedia codecs needed to play various audio/video "
+"files; packages needed to play commercial video DVD, etc. "
+msgstr ""
+"<span class='label red'>tainted</span> - zawiera pakiety wydane na otwartych "
+"licencjach, które mogą jednak łamać prawo patentowe obowiązujące w "
+"niektórych krajach, np. kodeki multimedialne; pakiety niezbędne do "
+"odtwarzania komercyjnych DVD, itp. "
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:118
+msgid "<strong>Note!</strong> non-free and tainted are not enabled by default."
+msgstr ""
+"<strong>Uwaga!</strong> non-free oraz tainted domyślnie nie są włączone."
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:119
+msgid "Edit software sources"
+msgstr "Konfiguruj nośniki"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:120
+msgid "... and update system"
+msgstr "... zaktualizuj system"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:121
+msgid "Check system updates"
+msgstr "Sprawdź aktualizacje"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:122
+msgid "GUI - RPMDrake"
+msgstr "GUI - RPMDrake"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:123
+msgid ""
+"<span class='label green'>Rpmdrake</span> is a program for installing, "
+"uninstalling and updating packages. It is the graphical user interface of "
+"<span class='label green'>urpmi</span>"
+msgstr ""
+"<span class='label green'>Rpmdrake</span> jest programem do instalacji, "
+"usuwania oraz aktualizowania pakietów. Jest to graficzny interfejs dla <span "
+"class='label green'>urpmi</span>"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:124
+msgid "read more (wiki)"
+msgstr "dowiedz się więcej (wiki)"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:125
+msgid "RPMdrake"
+msgstr "RPMdrake"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:126
+msgid "URPMI - from command line"
+msgstr "URPMI - z linii komend"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:127
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:128
+msgid "This is just small selection of popular packages, for more run"
+msgstr "To tylko niewielki wybór pakietów, aby zobaczyć więcej uruchom"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:129
+msgid "Featured"
+msgstr "Polecane"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:130
+msgid "Games"
+msgstr "Gry"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:131
+msgid "Internet"
+msgstr "Internet"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:132
+msgid "Video"
+msgstr "Wideo"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:133
+msgid "Audio"
+msgstr "Dźwięk"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:134
+msgid "Office"
+msgstr "Biuro"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:135
+msgid "Graphics"
+msgstr "Grafika"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:137
+msgid "Programming"
+msgstr "Programowanie"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:138
+msgid "Selected packages:"
+msgstr "Wybrane pakiety:"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:139
+msgid "Install selected"
+msgstr "Zainstaluj wybrane"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:140
+msgid "You can always launch MageiaWelcome from menu"
+msgstr "Zawsze możesz uruchomić MageiaWelcome z menu"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:142
+msgid "Applications"
+msgstr "Programy"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:145
+msgid "Be sure you have enabled <a>online repositories</a>"
+msgstr "Upewnij się że masz <a>skonfigurowane repozytoria</a>"
+
+#: ../usr/share/mageiawelcome/mageiawelcome.py:157
+msgid "About"
+msgstr "Informacje"
+
+#: ../usr/share/mageiawelcome/helpers.py:10
+msgid "Install"
+msgstr "Instaluj"
+
+#: ../usr/share/mageiawelcome/helpers.py:11
+msgid "Launch"
+msgstr "Uruchom"

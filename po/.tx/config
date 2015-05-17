@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[mageia.mageia-welcome]
+file_filter = <lang>.po
+source_file = mageiawelcome.pot
+source_lang = en
+type = PO

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/kickstart.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script src="js/ipc.js" type="text/javascript"></script>
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+		<script src="js/jquery-json-2.4.min.js" type="text/javascript"></script>
+		<script src="js/kickstart.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			// <![CDATA[
+		$(document).ready(function() {
+
+				$('.slides').bxSlider({ 
+				      pagerCustom: '#slide-pager',
+				      nextSelector: '#slider-next',
+				      prevSelector: '#slider-prev',
+				      nextText: '',
+				      prevText: ''
+				     
+				}); 
+				//NAVIGATION
+				$('.taby').each(function() {
+					var $div = $(this);
+					var $btn = $div.children('li');
+					$btn.each(function() { 
+						var $trescTaba = $($(this).attr('href'));
+						if ($(this).hasClass('active')) { 
+						$trescTaba.show(); 
+						} else {
+						$trescTaba.hide();
+						}
+						});
+
+					$btn.click(function(e) {
+						e.preventDefault();
+						$btn.removeClass('active');
+						$btn.each(function() {
+							$($(this).attr('href')).hide();
+							});
+						$(this).addClass('active');
+						$($(this).attr('href')).show();
+						//$($(this).attr('href')).fadeIn(300);
+						return false;
+						});
+				});
+				//APPLIST
+				$('.filtr').click(function() {
+						cat = this.id;
+						$(this).addClass('current');
+						$(this).siblings().removeClass('current');
+						$('ul#lista_applikacji li').hide();
+						$('ul#lista_applikacji li[class~='+ cat +']').fadeIn(300);
+
+						});
+
+				$('#filter-none').click(function() {
+						$(this).addClass('current');
+						$(this).siblings().removeClass('current');
+						$('ul#lista_applikacji li').fadeIn(300);
+						});
+
+				$('li#featured').trigger('click');
+				
+				$('#rpmdrake_info a').click(function()
+				{$('#home').trigger('click');
+				$('#repoconf').trigger('click');
+				});
+
+				//SIGNALS
+				// STARTUP CHECKBOX
+				$("#startup").change(function() {
+						if(this.checked) {
+						send('"checkbox checked"');
+						}
+						else {
+						send('"checkbox unchecked"');
+						}
+						});
+				// CLOSE BUTTON
+				$("#closebtn").click(function(){send('"close"');});
+				// WEBLINKS
+				$(".weblink").click(function(e){
+						e.preventDefault();
+						var link = $(this).attr('href');
+						send('"' + link + '"');
+						});
+				// RUN DRAKS AND APPLICATIONS
+				$('div.tab').on('click','button.cmd', function(){send('"run ' + ($(this).data("run")) + '"');});
+				//URPMI FROM APPLIST
+				$('#lista_applikacji').on('click','button.inst', function(){
+						var rpm = $(this).data('rpm');
+						send('"gurpmi ' + cat +' ' + rpm + '"');
+						selected = [];
+						$('span#count_rpms').text(selected.length);
+						$('div#selectedPKGS').html(selected.join(' '));
+						});
+				// INSTALL SELECTED
+				
+				// APPLIST - INSTALL SELECTED
+				$('#lista_applikacji').on('click','input:checkbox', function() {
+				  selected = [];
+				$('#lista_applikacji input:checkbox').each(function () {
+				  var $this = $(this),
+				      rpm = $this.attr('datasrc');
+				  if ($(this).prop('checked')) {
+				      selected.push(rpm);
+				  }
+				});
+				$('span#count_rpms').text(selected.length);
+				//$('span#selectedRPMS').tooltip('destroy');
+				$('div#selectedPKGS').html(selected.join(' '));
+				//$('span#selectedRPMS').tooltip('show');
+				});
+			      $('#install_all').on('click','button.install_all',function(){
+				    var rpms = selected.join(' ');
+				    send('"install_selected ' + cat +' '+ rpms + '"');
+				    selected = [];
+				    $('#lista_applikacji').find('input[type=checkbox]:checked').removeAttr('checked');
+				    $('span#count_rpms').text(selected.length);
+				    $('div#selectedPKGS').html(' ');
+				    });
+				});
+		// ]]>
+		</script>
+</head>
+<body class="$bodyclass"><div id="logoright"></div>
+	<header>
+	<nav>
+	<ul class="taby button-bar">
+		<li href="#tab-1" class="active" id="home"><a class=""><i class="icon-home"> </i> $welcome_btn</a></li>
+		<li href="#tab-2"><a class=""><i class="icon-list-alt"> </i> $rpm_install</a></li>
+	</ul>
+	</nav>
+	<img src="img/mageia-2013-alpha.png" id="logo" />
+	<div id="hdrinfo">
+		$release<br />
+		$kernel_l $kernel<br />
+		$arch_l $arch<br />
+		$desktop_l $desktop<br />
+	</div>
+	</header>
+	<section>  
+	<div id="close">
+		<span title="$youcan"><input id="startup" type="checkbox" name="showWindow" $checked> $show  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="closebtn" type="submit" class="small"><i class="icon-off"> </i> $close</button></span>
+	</div>
+	<!-- START -->
+	<div id="tab-1" class="tab">
+		<div id="slide-pager">
+			<ol>	<li><a data-slide-index="0" href="" id="welcome">$welcome_btn</a></li>
+				<li><a data-slide-index="1" href="">$mcc</a></li>
+				<li><a data-slide-index="2" href="" id="repoconf">$conf_update</a></li>
+				<li><a data-slide-index="3" href="">$inst_remove</a></li>
+			</ol>
+			<div id="prevnext"><div id="slider-prev"><i class="icon-circle-arrow-left icon-2x"></i></div><div id="slider-next"><i class="icon-circle-arrow-right icon-2x"></i></div></div>
+		</div>
+		<!-- Slideshow -->
+		<ul class="slides">
+			<li><div class="umenu"></div>
+			<div class="col_12">
+			<h2 id="welcome">$welcome $user!</h2>
+			<p id="message">$welcome_msg</p>
+			</div>
+		<div id="links" class="col_12">
+			<div class="mgalinks col_4">
+				<h5>$h_documentation</h5>
+				<!--<a href="https://wiki.mageia.org/en/Mageia_4_What%27s_New" class="weblink button medium"><i class="icon-bullhorn"> </i> $features</a><br />-->
+				<a href="https://wiki.mageia.org/en/Mageia_5_Release_Notes" class="weblink button medium"><i class="icon-lightbulb"> </i> $relnotes</a><br />
+				<a href="https://wiki.mageia.org/en/Mageia_5_Errata" class="weblink button medium"><i class="icon-bolt"> </i>  $errata</a><br />
+				<a href="https://wiki.mageia.org/en/Newcomers_start_here" class="weblink button medium"><i class="icon-key"> </i>  $newcomers</a><br />
+				<a href="https://wiki.mageia.org/en/Documentation" class="weblink button medium"><i class="icon-book"> </i> $h_documentation</a>
+			</div>
+			<div class="mgalinks col_4">
+				<h5>$h_support</h5>
+				<a href="https://forums.mageia.org/en/" class="weblink button medium"><i class="icon-heart"> </i>  $forum</a><br />
+				<a href="https://wiki.mageia.org/en/Category:Documentation" class="weblink button medium"><i class="icon-globe"> </i>  $wiki</a><br />
+				<a href="irc" class="weblink button medium"><i class="icon-comments"> </i> $chat</a><br />
+				<a href="https://bugs.mageia.org/" class="weblink button medium"><i class="icon-ambulance"> </i> $bugs</a><br />
+			</div>
+			<div class="mgalinks col_4"> 
+				<h5>$h_community</h5>
+				<a href="https://www.mageia.org/community/" class="weblink button medium"><i class="icon-group"> </i> $comm_center</a><br />
+				<a href="https://www.mageia.org/contribute/" class="weblink button medium"><i class="icon-beaker"> </i>  $contribute</a><br />
+				<a href="https://www.mageia.org/donate/" class="weblink button medium"><i class="icon-money"> </i>  $donate</a><br />
+				<a href="https://identity.mageia.org/" class="weblink button medium"><i class="icon-signin"> </i>  $joinus</a><br />
+			</div>
+		</div>
+			</li>
+			<li><div class="umenu"></div>
+			<div class="col_6"><h5>$mcc</h5></div>
+			<div class="col_7">
+				<p>$mccdesc</p>
+				<ul class="icons">
+				<li><i class="icon-ok"> </i>$SM</li>
+				<li><i class="icon-ok"> </i>$H</li>
+				<li><i class="icon-ok"> </i>$NI</li>
+				<li><i class="icon-ok"> </i>$S</li>
+				<li><i class="icon-ok"> </i>$NS</li>
+				<li><i class="icon-ok"> </i>$LD</li>
+				<li><i class="icon-ok"> </i>$Sec</li>
+				<li><i class="icon-ok"> </i>$B</li>
+				</ul>
+				<button href="http://doc.mageia.org/mcc/4/en/content/index.html" class="medium blue inset weblink"><i class="icon-external-link"> </i> $h_documentation</button>
+				
+			</div>
+			<div class="col_5 center"><div id="mcc"></div><button class="cmd" data-run="drakconf"><i class="icon-share-alt"> </i> $mcc</button><br /><span>$adminpass</span></div>
+			</li>
+			<li><div class="umenu"></div><div class="col_6"><h5>$conf_media</h5>
+				$mag_media</div>
+			<div class="clearfix">
+				<div class="col_8 column">
+					<p>$core</p>
+					<p>$nonfree</p>
+					<p>$tainted</p>
+				</div>
+				<div class="col_4 column">
+					<div class="notice warning"><i class="icon-warning-sign icon-large"></i> 
+						$note
+					</div>
+					<div class="right"><button class="cmd" data-run="drakrpm-edit-media"><i class="icon-share-alt"> </i> $editss</button><br /><span>$adminpass</span></div>
+				</div>
+			</div>
+			<div class="col_12"><h5>$updsys</h5>
+				<div class="right"><button class="cmd" data-run="drakrpm-update"><i class="icon-share-alt"> </i> $chkupd</button><br /><span>$userpass</span>
+				</div>
+			</div>
+			</li>
+			<li><div class="umenu"></div>
+			<div class="col_6">
+				<h5>$inst_remove</h5>
+				<h6>$guirpmdrake</h6>
+			</div>
+			<div class="col_9"> <p>$rpmdrake_desc</p>
+				<p><button href="https://wiki.mageia.org/en/Software_management#Install_and_remove_software" class="medium blue inset weblink"><i class="icon-external-link"> </i> $readmore</button>
+				</p></div>
+				<div class="col_3"><button class="cmd" data-run="rpmdrake"><i class="icon-share-alt"> </i> $r_rpmdrake</button><br /><span>$adminpass</span></div>
+				<h6 class="col_12">$urpmi</h6>
+				<div class="col_9"> 
+					<p><button href="https://wiki.mageia.org/en/URPMI" class="medium blue inset weblink"><i class="icon-external-link"> </i> $readmore</button></p>
+				</div>
+				<div class="col_3"><button class="cmd" data-run="xvt"><i class="icon-share-alt"> </i> $r_term</button></div>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- RPMY -->
+		<div id="tab-2" class="tab">
+			<div id="rpmdrake_info">$small_selection <button class="cmd small" data-run="rpmdrake"><i class="icon-share-alt"> </i> $r_rpmdrake</button><br />
+			$besure_repos
+			</div>
+			<div id="applist">
+				<ul class="filter">
+					<!--<li class="filtr" id="filter-none">All Apps</li>-->
+					<li class="filtr" id="featured">&nbsp;&nbsp;$featured</li>
+					<li class="filtr" id="games">&nbsp;&nbsp;$games</li>
+					<li class="filtr" id="internet">&nbsp;&nbsp;$internet</li>
+					<li class="filtr" id="video">&nbsp;&nbsp;$video</li>
+					<li class="filtr" id="audio">&nbsp;&nbsp;$audio</li>
+					<li class="filtr" id="office">&nbsp;&nbsp;$office</li>
+					<li class="filtr" id="graphics">&nbsp;&nbsp;$graphics</li>
+					<li class="filtr" id="system">&nbsp;&nbsp;$system</li>
+					<li class="filtr" id="programming">&nbsp;&nbsp;$programming</li>
+					
+<div id="selectedRPMS" class="tooltip" title="tooltip" data-placement="top">$selected <span id="count_rpms">0</span><br />
+<div id="selectedPKGS"></div></div>
+<div id="install_all">
+<button class="install_all small pill"><i class='icon-circle-arrow-down'> </i> $inst_sel</button></div>
+				</ul>
+				<ul class="list" id="lista_applikacji">
+					$applist
+
+				</ul> 
+			</div><!-- /APP LIST -->
+		</div>
+
+		
+		</section>   
+	</body>
+</html>

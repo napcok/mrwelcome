@@ -1,0 +1,102 @@
+html {
+      font-size: 14px;
+}
+a:focus, button:focus{outline:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+p a.weblink{color:#FFF;font-weight:bold; text-decoration:none;}
+p a.weblink:hover{text-decoration:underline;}
+body {background: #0C3A6D; color:#FFF;margin:0;padding:0;font-size:12px;cursor:default;text-shadow: 1px 0 2px #000;}
+header{padding:0 6px;height:66px;position:relative;color:#FFF;
+ }
+h1,h2,ul,div{margin:0;padding:0;}
+
+h2#welcome{font-size:26px;}
+div#hdrinfo{position:absolute;top:0;right:0;background:rgba(255, 255, 255, 0.2); padding:8px;border-radius:0 0 0 8px;font-size:10px;margin:0;}
+div#close{position:fixed;bottom:0;right:8px;padding:1px;font-size:11px; z-index:200;}
+header h2{text-shadow: 0 1px 2px #000;font-size:32px;margin-left:20px;margin-top:1px; margin-bottom:-5px;}
+header span{font-size:10px;text-shadow: 0 1px 2px #000;margin-left:20px;margin-top:-14px;}
+
+button.cmd {margin-bottom:4px;}
+/* Menu */
+header nav {width:100%;text-align:center;margin-top:34px;z-index:100;cursor: pointer;float:left;}
+
+#logo {margin-top: -70px;margin-left: -10px; height:70px;float:left;}
+#logoright {width:200px;height:240px; position:absolute;right:16px; bottom:50px; background-image:url('../img/mga_bg.png');background-repeat:no-repeat;
+   background-position:bottom left;
+}
+.taby {margin: 0 auto;z-index:100;}
+section{background-image: -webkit-linear-gradient(bottom, #2B8BCa 0%, #0C3A6D 100%);
+
+  padding:0;}
+div.tab {margin:0;padding:6px;}
+div.tab nav {width:100%;text-align:center;}
+div#tab-1,div#tab-2{padding:0;}
+/* START */
+
+p#message{margin: 0 }
+div#links {position:absolute; bottom:0;}
+.mgalinks {text-align:center;}
+.mgalinks a {width: 240px;margin-bottom:2px;}
+div.mgalinks{padding:8px 8px 0 8px;}
+
+div.mgalinks h5{text-align:center;font-weight:normal;text-transform:uppercase;}
+
+
+/*LABELS */
+.label{border-radius: 3px;
+    color: #FFFFFF;display: inline-block;font-weight: bold; padding: 2px 4px;vertical-align: baseline;font-size:10px;}
+.gray {background-color: #999999;}
+.green{background-color: #6BA500;}
+.red{background-color:#CF0404;}
+.blue{background-color:#4096EE;}
+/* First steps */
+.slides li {height:405px; }
+.icons {margin-left:30px; margin-bottom:12px;}
+.icons li {height: 20px;}
+div#slide-pager{position:absolute; right:0;z-index:20;background:rgba(255, 255, 255, 0.2);padding:6px 3px;margin: 0 -6px 0 0;width:45%;border-radius: 0 0 0 8px;}
+div#slide-pager ol{margin-bottom:0;}
+div#slide-pager li {line-height:14px;margin-left:0;padding:0;}
+div#slide-pager li a{text-shadow:none;color:#DDD;font-size:11px;text-decoration:none;font-weight:normal;}
+div#slide-pager li a.active{text-shadow:none;color:#FFF;font-size:11px;text-decoration:underline;}
+div#slide-pager li a:hover{text-decoration:underline;color:#EEE;}
+
+div#prevnext {position:absolute;top:2px;right:10px;}
+div#prevnext div{position:relative;margin-right:4px;float:left;color:#DDD;}
+div#prevnext div a{position:absolute;top:0; left:0;display:block; min-width:22px; min-height:24px;text-decoration:none;font-size:16px;font-weight:bold;color:#222;text-shadow:none;line-height:24px;border-radius:12px; }
+div#prevnext div:hover {color: #FFF;}
+
+#mcc {width:300px; height:206px;background-image:url('../img/mcc.jpg');text-align:center;border: 4px solid white;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,.5);margin-bottom:8px;}
+/* APP LIST */
+#rpmdrake_info{background:#FFCC00;color:#111;line-height:24px;border-bottom: 1px solid #111;text-align:center;text-shadow: none;}
+div#applist {width:100%;clear:both;padding:0;margin:0;}
+ul.filter, ul.list{float:left;margin-top:0;}
+ul.filter {width: 218px;background: #FFF;margin:0;height:358px;}
+ul.filter li {display:block;
+  font-size:13px; font-weight:normal;
+  line-height:15px;padding-left:4px;color:#111;text-shadow: none;cursor: pointer;
+}
+ul.filter li.current,ul.filter li.current:hover {background-color: #0A5C93; color: #FFF;}
+ul.filter li:hover {background-color: #e5e5e5; color: #333;}
+ul.list {width: 580px;height:358px; overflow-x:hidden;overflow-y:auto;padding:0;list-style-type:none;border-left:1px solid #262F45;background-image: -webkit-linear-gradient(bottom, #2B8BCa 0%, #0C3A6D 100%);}
+
+ul.list img.icon {height:32px;width:32px; float:left;margin:6px;}
+ul.list li {width: 590px;height:54px;margin: 0;position:relative;border-bottom:1px solid #262F45;padding:2px;}
+ul.list li:hover {background:rgba(0, 0, 0, 0.2); }
+ul.list li h6 {margin:0;margin-top:6px;}
+ul.list li p.description {margin-top:0;}
+
+ul.list li button {position:absolute; left:480px; top:28px;float:right;}*/
+
+ul.list li.urpme {background:rgba(0, 0, 0, 0.4);
+  background-image:url('../img/ok.png');
+  background-repeat:no-repeat;
+  background-position:48px 14px; 
+}
+ul.list li.urpme:hover {background-color:rgba(0, 0, 0, 0.3);}
+ul.list li span.label{position:absolute; top:2px; right:36px;}
+.chkbox {float:left;width:30px;height:54px;}
+.chkbox input[type='checkbox']{margin-top: 14px;}
+#selectedRPMS{position:absolute;bottom:25px;left:0;background:rgba(0, 0, 0, 0.6); padding:2px;border-radius:0 2px 0 0;font-size:10px; z-index:200;width:217px;}
+#install_all {position:absolute;bottom:1px;left:32px;}
+#rpmdrake_info a {cursor:pointer; text-decoration:underline;color: #111;}
+#rpmdrake_info a:hover{font-weight:bold;}

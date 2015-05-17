@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=MR Welcome
+Comment=MR Welcome Screen
+Type=Application
+Terminal=false
+Icon=mgaonline
+Exec=mrwelcome
+Categories=Utility;X-MageiaLinux-CrossDesktop;
