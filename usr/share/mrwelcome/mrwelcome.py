@@ -141,7 +141,8 @@ def main():
     l['inst_sel'] = _("Install selected")
     l['youcan'] = _("You can always launch MageiaWelcome from menu")    
     
-    l['rpm_install'] = _("Applications") 
+    l['rpm_install'] = _("Applications")
+    l['webchat_btn'] = _("WebChat")
     l['applist'] = listapp
     l['bodyclass'] = restricted_repos
     l['besure_repos'] = _("Be sure you have enabled <a>online repositories</a>")

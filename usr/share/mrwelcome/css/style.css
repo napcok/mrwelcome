@@ -29,7 +29,7 @@ section{background-image: -webkit-linear-gradient(bottom, #2B8BCa 0%, #0C3A6D 10
   padding:0;}
 div.tab {margin:0;padding:6px;}
 div.tab nav {width:100%;text-align:center;}
-div#tab-1,div#tab-2{padding:0;}
+div#tab-1,div#tab-2,div#tab-3{padding:0;}
 /* START */
 
 p#message{margin: 0 }
@@ -70,14 +70,14 @@ div#prevnext div:hover {color: #FFF;}
 #rpmdrake_info{background:#FFCC00;color:#111;line-height:24px;border-bottom: 1px solid #111;text-align:center;text-shadow: none;}
 div#applist {width:100%;clear:both;padding:0;margin:0;}
 ul.filter, ul.list{float:left;margin-top:0;}
-ul.filter {width: 218px;background: #FFF;margin:0;height:358px;}
+ul.filter {width: 218px;background: #FFF;margin:0;height:408px;}
 ul.filter li {display:block;
   font-size:13px; font-weight:normal;
-  line-height:15px;padding-left:4px;color:#111;text-shadow: none;cursor: pointer;
+  line-height:18px;padding-left:4px;color:#111;text-shadow: none;cursor: pointer;
 }
 ul.filter li.current,ul.filter li.current:hover {background-color: #0A5C93; color: #FFF;}
 ul.filter li:hover {background-color: #e5e5e5; color: #333;}
-ul.list {width: 580px;height:358px; overflow-x:hidden;overflow-y:auto;padding:0;list-style-type:none;border-left:1px solid #262F45;background-image: -webkit-linear-gradient(bottom, #2B8BCa 0%, #0C3A6D 100%);}
+ul.list {width: 580px;height:408px; overflow-x:hidden;overflow-y:auto;padding:0;list-style-type:none;border-left:1px solid #262F45;background-image: -webkit-linear-gradient(bottom, #2B8BCa 0%, #0C3A6D 100%);}
 
 ul.list img.icon {height:32px;width:32px; float:left;margin:6px;}
 ul.list li {width: 590px;height:54px;margin: 0;position:relative;border-bottom:1px solid #262F45;padding:2px;}
@@ -97,6 +97,8 @@ ul.list li span.label{position:absolute; top:2px; right:36px;}
 .chkbox {float:left;width:30px;height:54px;}
 .chkbox input[type='checkbox']{margin-top: 14px;}
 #selectedRPMS{position:absolute;bottom:25px;left:0;background:rgba(0, 0, 0, 0.6); padding:2px;border-radius:0 2px 0 0;font-size:10px; z-index:200;width:217px;}
+#selectedRPMS #selectedPKGS {display:none;}
+#selectedRPMS:hover #selectedPKGS {display:block;}
 #install_all {position:absolute;bottom:1px;left:32px;}
 #rpmdrake_info a {cursor:pointer; text-decoration:underline;color: #111;}
 #rpmdrake_info a:hover{font-weight:bold;}

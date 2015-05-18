@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Mageia Welcome
-Comment=Mageia Welcome Screen
+Name=MR Welcome
+Comment=MR Welcome Screen
 Icon=gnome-info
-Exec=mageiawelcome-launcher
+Exec=mrwelcome-launcher
 Terminal=false
 Type=Application
 Categories=
